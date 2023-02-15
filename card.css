@@ -1,0 +1,55 @@
+.card {
+    width: 95%;
+    height: 95%;
+
+    border-radius: 2rem;
+}
+
+.float-in {
+    animation: float-in 0.5s ease-in;
+    animation-delay: 0.1s;
+    opacity: 0;
+
+    transform: translateX(-30%);
+    animation-fill-mode: forwards;
+}
+
+.float-out {
+    animation: float-out 0.2s ease-in;
+    opacity: 1;
+
+    transform: translateX(0%);
+    animation-fill-mode: forwards;
+}
+
+@keyframes float-in {
+    0% {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(3%);
+    }
+    75% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float-out {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+}
