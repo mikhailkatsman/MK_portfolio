@@ -1,0 +1,67 @@
+body {
+    font-size: 62.5%;
+    background-color: #111; 
+    margin: 0;
+    padding: 0; 
+    
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.section-container {
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+section {
+    position: absolute;
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+
+    border: red solid 0.5rem;
+}
+
+p {
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+}
+
+.x-plain {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+
+}
+
+.y-plain {
+    transform: rotateX(-16.8deg) rotateY(60deg) rotateZ(0deg);
+
+}
+
+#section-1 {
+    top: 15%;
+    left: -6%;
+    right: 50%;
+}
+
+#section-2 {
+    top: 40%;
+    left: 10%;
+    right: 10%;
+}
+
+#section-3 {
+    top: 65%;
+    left: 50%;
+    right: -6%;
+}
