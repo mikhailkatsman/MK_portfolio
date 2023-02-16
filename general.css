@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-family: 'Roboto Mono', monospace;
+}
+
 body {
     font-size: 62.5%;
     background-color: #111; 
@@ -17,6 +23,19 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+h1 {
+    font-size: 16rem;
+    font-weight: 700;
+    line-height: 0;
+}
+
+p {
+    font-size: 16rem;    
+    font-weight: 700;
+    line-height: 0;
+    color: white;
+}
+
 .section-container {
     display: flex;
     flex-direction: column;
@@ -30,7 +49,10 @@ body::-webkit-scrollbar {
 section {
     display: flex;
 
-    /* box-shadow: 0 0 0 0.5rem red; */
+    /* MAYBE REMOVE */
+    justify-content: center;
+
+    box-shadow: 0 0 0 0.5rem red;
 }
 
 #section-1 {
@@ -46,6 +68,17 @@ section {
 }
 
 #section-2 {
+    align-self: flex-end;
+
+    width: 20rem;
+    height: 20rem;
+
+    margin-top: 9.8rem;
+
+    z-index: 1;
+}
+
+#section-3 {
     align-self: center;
 
     width: 54rem;
@@ -56,7 +89,18 @@ section {
     z-index: 2;
 }
 
-#section-3 {
+#section-4 {
+    align-self: flex-start;
+
+    width: 20rem;
+    height: 20rem;
+
+    margin-top: -9.8rem;
+
+    z-index: 3;
+}
+
+#section-5 {
     align-self: flex-end;
 
     width: 77rem;
@@ -75,5 +119,10 @@ section {
 
 .y-plain {
     transform: rotateX(-16.8deg) rotateY(60deg) rotateZ(0deg);
+
+}
+
+.z-plain {
+    transform: rotateX(16.8deg) rotateY(60deg) rotateZ(0deg);
 
 }
